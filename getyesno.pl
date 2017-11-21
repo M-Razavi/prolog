@@ -2,7 +2,8 @@
 % Menu that obtains 'yes' or 'no' answer
 
 get_yes_or_no(Result) :- 	get(Char),	% read a character 
-						%get(A),			% consume the Return after it interpret(Char,Result), 
+						get0(_),			% consume the Return after it 
+						interpret(Char,Result),
 						!.				% cut -- see text
 get_yes_or_no(Result) :- 	nl, 
 						put(7),			% beep 

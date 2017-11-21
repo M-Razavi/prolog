@@ -138,3 +138,6 @@ explain(ignition_system) :-
    write('overdue for replacement, replace them; if this'),nl,
    write('does not solve the problem, consult a mechanic.'),nl.
 
+   
+   
+:-start.
